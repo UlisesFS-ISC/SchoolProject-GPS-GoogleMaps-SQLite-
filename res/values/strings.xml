@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Practica Final Android</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_gps_started">GPS started</string>
+    <string name="title_activity_gps_finished">Sprint is over</string>
+    <string name="title_activity_about">about</string>
+    <string name="iniAbout">About: Ulises Fajardo Salgado</string>
+    <string name="bodyAbout">uthor Ulises Fajardo Salgado \n edad:23 \n N.control: 11121355     </string>
+
+    <string name="iniIntro">Welcome </string>
+    <string name="buttonAbout">Acerca de</string>
+    <string name="buttonExit">Terminar</string>
+    <string name="buttonSystem">Specs</string>
+    <string name="buttonIntro">Regresar al inicio</string>
+    <string name="title_activity_maps">Mapa</string>
+</resources>

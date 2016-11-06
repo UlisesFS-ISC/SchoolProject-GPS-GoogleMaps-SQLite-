@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#7d84d4"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="Tracking..."
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnStart"
+        android:layout_alignEnd="@+id/btnStart"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:text="00:00:00"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/Status"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnEnd"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:text="End"
+        android:layout_below="@+id/textTimer"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:text="Pause"
+        android:layout_below="@+id/textTimer"
+        android:layout_toRightOf="@+id/btnEnd"
+        android:layout_toEndOf="@+id/btnEnd" />
+
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:visibility="visible"
+        android:text="Start"
+        android:layout_below="@+id/textTimer"
+        android:layout_toLeftOf="@+id/btnEnd"
+        android:layout_toStartOf="@+id/btnEnd" />
+
+    <TextView
+        android:id="@+id/startLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:lines="3"
+        android:textColor="#ffffff"
+        android:text="Start location"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btnStart"
+        android:layout_toEndOf="@+id/btnStart" />
+
+    <TextView
+        android:id="@+id/currentLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:lines="3"
+        android:textColor="#ffffff"
+        android:text="Current: "
+        android:layout_below="@+id/startLoc"
+        android:layout_alignLeft="@+id/startLoc"
+        android:layout_alignStart="@+id/startLoc" />
+
+    <TextView
+        android:id="@+id/currentDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:lines="3"
+        android:textColor="#ffffff"
+        android:text="Distance"
+
+        android:layout_below="@+id/currentLoc"
+        android:layout_alignLeft="@+id/currentLoc"
+        android:layout_alignStart="@+id/currentLoc" />
+
+
+</RelativeLayout>

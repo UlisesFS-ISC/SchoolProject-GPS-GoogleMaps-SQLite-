@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#7d84d4"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:text="Tracking Sprints" />
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:text="Start"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/textTimer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:text="About"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:text="Back"
+        android:layout_alignTop="@+id/btnAbout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check landmarks"
+        android:id="@+id/btnViewAll"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
+

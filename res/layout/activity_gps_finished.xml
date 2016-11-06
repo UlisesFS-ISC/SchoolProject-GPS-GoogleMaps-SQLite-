@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#7d84d4"
+    android:layout_height="match_parent" >
+
+
+
+    <TextView
+        android:id="@+id/resultsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="Finished"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/resultsDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:text="Distance: "
+        android:layout_below="@+id/resultsEndLoc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#7d84d4"
+        android:backgroundTint="#7d84d4"
+        android:autoText="false" />
+
+    <TextView
+        android:id="@+id/resultsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="37dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:text="Duration: " />
+
+    <TextView
+        android:id="@+id/resultsInitLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="37dp"
+        android:layout_below="@id/resultsTime"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:text="Start Location: " />
+
+    <TextView
+        android:id="@+id/resultsEndLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="37dp"
+        android:layout_below="@id/resultsInitLoc"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:text="Final Location: " />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:id="@+id/btnExit"
+        android:layout_below="@+id/resultsTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Map"
+        android:id="@+id/btnMap"
+        android:layout_below="@+id/btnExit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Records"
+        android:id="@+id/btnDel"
+        android:layout_above="@+id/resultsTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
